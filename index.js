@@ -37,9 +37,14 @@ async function main() {
       return;
     }
 
-    const response = await request(answer);
-    console.log(`chatGPT: ${response.content}`);
-    main();
+    try {
+      const response = await request(answer);
+      console.log(`chatGPT: ${response.content}`);
+      main();
+    } catch (error) {
+      console.log(error);
+      rl.close();
+    }
   })
 }
 
