@@ -9,8 +9,5 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "openai": "^3.2.1"
-  }
+  "license": "ISC"
 }
